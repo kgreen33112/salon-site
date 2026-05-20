@@ -3,27 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointments</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Yuji+Boku&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/75fcca5184.js" crossorigin="anonymous"></script>
 </head>
-<body class="appointment-body">
+<body class="contact-body">
     <nav class="top-nav-bar">
         <div class="top-logo">Heaven</div>
         <div class="top-nav-links">
-            <a href="index.html">Home</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="about-me.html">About Me</a>
-            <a href="contact-me.html">Contact Me</a>
+            <a href="./index.html">Home</a>
+            <a href="./pricing.html">Pricing</a>
+            <a href="./about-me.html">About Me</a>
+            <a href="./contact-me.html">Contact Me</a>
         </div>
     </nav>
-    <div class="form-container">
-        <h1>Book an Appointment</h1>
-        <h2>Contact Details:</h2>
-        <form class="appointment-form">
+     <div class="form-container">
+        <h1>Contact Me</h1>
+        <form class="contact-form">
             <label for="first-name">*First Name:</label>
             <input type="text" id="first-name" name="first-name" placeholder="First" required>
             <label for="last-name">*Last Name:</label>
@@ -33,15 +32,9 @@
             <label for="phone">*Phone:</label>
             <input type="tel" id="phone" name="phone" placeholder="(123)-456-7890" required>
         </form>
-        <h2>Appointment Details:</h2>
-        <form class="appointment-form">
-            <select id="service" name="service" required>
-                <option value="">*Select a service:</option>
-                <option value="haircut">Wash, Cut & Style</option>
-                <option value="touch-up-color">Root Touch-Up</option>
-                <option value="all-over-color">All-Over Color</option>
-                <option value="cut-only">Cut Only</option>
-            </select>
+        <h2>Message:</h2>
+        <form class="contact-form">
+            <textarea id="message" name="message" placeholder="Enter your message here..." required></textarea>
         </form>
     </div>
 </body>
